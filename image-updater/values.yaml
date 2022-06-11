@@ -1,0 +1,6 @@
+config:
+  argocd:
+    grpcWeb: false
+    insecure: true
+    plaintext: true
+    token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhcmdvY2QiLCJzdWIiOiJpbWFnZS11cGRhdGVyOmFwaUtleSIsIm5iZiI6MTY1NDg3MzIyMywiaWF0IjoxNjU0ODczMjIzLCJqdGkiOiJpbWFnZS11cGRhdGVyIn0.U4OS2-Qq2G4_k52ZKx3D4bre6JorJSyl01yHvnnflv0"
