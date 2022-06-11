@@ -3,16 +3,6 @@ kind: Application
 metadata:
   name: continuous-delivery-go-app
   namespace: default # namespace, where argo is installed
-  annotations:
-    # TODO
-    # 1 try argocd-image-updater.argoproj.io/write-back-method: git
-    # 2 try update-strategy: semantic version + write-back-method: argocd
-    # 3 try update-strategy: semantic version + write-back-method: git
-    argocd-image-updater.argoproj.io/image-list: app=stakkato95/continuous-delivery-go:latest
-    argocd-image-updater.argoproj.io/app.update-strategy: digest
-    argocd-image-updater.argoproj.io/app.allow-tags: any
-    argocd-image-updater.argoproj.io/myalias.force-update: "true"
-    argocd-image-updater.argoproj.io/write-back-method: argocd
 spec:
   project: default
   source:
